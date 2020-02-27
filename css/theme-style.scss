@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap');
+html {
+	height: 100%;
+}
+body {
+	position: relative;
+	background: url(../images/body-bg.png) no-repeat;
+	background-size: cover;
+	background-position-y: -250px
+}
+.container {
+	max-width: 1400px;
+}
+.navbar {
+	padding: 40px 20px 20px 20px;
+}
+.navbar-expand-lg {
+	position: relative;
+	z-index: 9;
+}
+.navbar-brand {
+	img {
+		max-width: 170px;
+	}
+}
+.navbar-light .navbar-toggler {
+	color: #331A70;
+	border: none;
+}
+.navbar-light .navbar-nav .nav-link {
+	font: Bold 16px/18px Roboto;
+	letter-spacing: 0;
+	color: #331A70;
+}
+
+.navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link.active {
+	font: Bold 16px/18px Roboto;
+	letter-spacing: 0;
+	color: #331A70;
+}
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
+	color: #331A70;
+}
+.aaa {
+	height: 990px;
+	width: 50vw;
+	position: absolute;
+	top: 0;
+	 z-index: -1;
+	 > div {
+		 height: 100%;
+		 background-size: cover;
+		 background: url(../images/banner-bg-1.png) no-repeat top 0px left -50px;
+
+	 }
+ }
+.bbb {
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 1;
+	> div {
+		height: 100%;
+		background-size: initial;
+		background: url(../images/banner-bg-2.png) no-repeat top 210px right -50px;
+	}
+}
+.section-separator {
+	margin-bottom: 50px;
+}
+.abc {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-end;
+}
+.banner-area {
+	min-height: 605px;
+
+	.banner-text {
+		margin-bottom: 40px;
+	}
+	.banner-title {
+		margin-bottom: 20px;
+		font-size: 40px;
+		font-weight: bold;
+		font-family: Roboto, serif;
+		letter-spacing: 0;
+		color: #FFFFFF;
+	}
+	 .banner-lead {
+		 font-size: 24px;
+		 font-weight: 500;
+		 font-family: Roboto;
+		 margin-bottom: 40px;
+		 line-height: 30px;
+		 letter-spacing: 0;
+		 color: #331A70;
+		 max-width: 460px;
+	}
+}
+.apps-button-group {
+
+	a {
+		display: inline-block;
+		margin: 5px 8px;
+		img {
+			max-width: 200px;
+			width: 100%;
+		}
+	}
+}
+.user-card {
+	background: #FFFFFF 0% 0% no-repeat padding-box;
+	box-shadow: 0px 10px 30px #00000026;
+	border-radius: 10px;
+	margin-bottom: 50px;
+
+	.card-bg {
+		height: 308px;
+		width: 100%;
+		background: url(../images/card-4.png) no-repeat center;
+		background-size: cover;
+		border-radius: 10px;
+		margin-bottom: 15px;
+
+	}
+	h3 {
+		font-size: 28px;
+		font-weight: 400;
+		font-family: Roboto, serif;
+		letter-spacing: 0;
+
+		a {
+			cursor: pointer;
+			color: #331A70;
+
+		}
+		& :hover {
+			 text-decoration: none;
+		 }
+	}
+	.rating {
+	}
+	p {
+		font-size: 15px;
+		font-weight: 400;
+		font-family: Roboto, serif;
+		text-align: center;
+		letter-spacing: 0;
+		color: #9B9B9B;
+		padding-bottom: 30px;
+	}
+}
+
+.rating > span:hover:before {
+	content: "\2605";
+	position: absolute;
+}
+.rating {
+	unicode-bidi: bidi-override;
+	direction: rtl;
+	margin-bottom: 5px;
+}
+.rating > span {
+	position: relative;
+	display: inline-block;
+	width: 30px;
+	font-size: 30px;
+	line-height: 24px;
+	color: #B4B4B4;
+}
+.rating > span:hover:before,
+.rating > span:hover ~ span:before {
+	cursor: pointer;
+	content: "\2605";
+	position: absolute;
+	color: #FFC400;
+}
+
+.category-card {
+	background-color: #fff;
+	border-radius: 10px;
+	border: 1px solid #eee;
+	margin-bottom: 40px;
+	.layer {
+		background-color: rgba(51, 26, 112, 0.7);
+		border-radius: 10px 10px 0 0;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+	.card-bg {
+		background: url("../images/category-card.png") no-repeat center center;
+		position: relative;
+		background-size: cover;
+		height: 240px;
+		border-radius: 10px 10px 0 0;
+		.a {
+			background: url("../images/category-card2.png") no-repeat center center;
+		}
+	}
+	//Extra Classes form just UI Structure
+
+	.card-bg.a {
+		background: url("../images/category-card2.png") no-repeat center center;
+		background-size: cover;
+	}
+	.card-bg.b {
+		background: url("../images/category-card3.png") no-repeat center center;
+		background-size: cover;
+	}
+	.card-bg.c {
+		background: url("../images/category-card4.png") no-repeat center center;
+		background-size: cover;
+	}
+
+	//Extra Classes form just UI Structure
+	h2 {
+		padding: 5px 0;
+		font-size: 36px;
+		font-weight: 500;
+		font-family: Roboto;
+		letter-spacing: 0;
+
+		text-shadow: 0px 10px 30px #00000026;
+		a {
+			color: #331A70;
+		}
+		& :hover {
+			color: #331A70;
+			text-decoration: none;
+		}
+	}
+}
+@media (min-width: 992px) {
+	.navbar-expand-lg .navbar-nav .nav-link {
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+}
+@media (max-width: 1440px) {
+	body {
+		background-position-y: -100px;
+	}
+	.container {
+		max-width: 1200px;
+	}
+}
+@media (max-width: 1030px) {
+	body {
+		background-position-y: 0;
+	}
+	.banner-area {
+		.banner-text {
+			margin-top: -165px;
+		}
+		.banner-title {
+			margin-bottom: 30px;
+			font-size: 36px;
+		}
+		.banner-lead {
+			font-size: 16px;
+			color: #331A70;
+			max-width: 400px;
+			line-height: 20px;
+		}
+	}
+}
+@media (max-width: 769px) {
+	.banner-area {
+		height: 45vh !important;
+	}
+}
+
+
