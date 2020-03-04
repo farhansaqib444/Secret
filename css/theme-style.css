@@ -9,7 +9,8 @@ body {
   background-position-y: -250px; }
   body.mini-bg {
     background: url(../images/bckgrnd-2.png) no-repeat;
-    background-position-y: -250px; }
+    background-position-y: -250px;
+    background-size: cover; }
 
 input:focus, select:focus, .btn {
   outline-offset: 0;
@@ -91,6 +92,12 @@ button:focus {
   line-height: 30px;
   letter-spacing: 0;
   color: #161616; }
+.section-title .tag-line {
+  font-family: Roboto, serif;
+  font-size: 28px;
+  font-weight: 400;
+  letter-spacing: 0;
+  color: #2C99ED; }
 
 .section-separator {
   margin-bottom: 50px; }
@@ -159,7 +166,7 @@ footer {
 
 @media (max-width: 1440px) {
   body {
-    background-position-y: -60px; }
+    background-position-y: -60px !important; }
 
   .container {
     max-width: 1200px; }
@@ -178,7 +185,7 @@ footer {
     width: 100%; }
 
   .banner-area.without-slider {
-    min-height: 320px;
+    min-height: 265px;
     display: flex;
     align-items: flex-end; }
   .banner-area .banner-left {
@@ -201,7 +208,7 @@ footer {
     width: 100%; }
 
   .section-title h2 {
-    font-size: 36px; }
+    font-size: 25px; }
   .section-title p {
     font-size: 18px; } }
 @media (min-width: 992px) {
@@ -225,7 +232,7 @@ footer {
   .banner-area {
     min-height: 470px; }
     .banner-area.without-slider {
-      min-height: 230px;
+      min-height: 180px;
       display: flex;
       align-items: flex-end; }
     .banner-area .banner-left {
@@ -235,7 +242,7 @@ footer {
       margin-bottom: 0; }
       .banner-area .banner-text .banner-title {
         margin-bottom: 50px;
-        font-size: 26px; }
+        font-size: 36px; }
       .banner-area .banner-text .banner-lead {
         margin-top: 0; }
     .banner-area .banner-slider img {
@@ -261,7 +268,8 @@ footer {
     background-position-y: 0; }
     body.mini-bg {
       background: url(../images/mobilebckgrnd.png) no-repeat;
-      background-position-y: 0; }
+      background-position-y: 0;
+      background-size: cover; }
 
   .navbar {
     padding: 15px 15px;
@@ -283,7 +291,7 @@ footer {
       margin-bottom: 0; }
       .banner-area .banner-text .banner-title {
         margin-bottom: 15px;
-        font-size: 25px;
+        font-size: 34px;
         color: #331A70; }
       .banner-area .banner-text .banner-lead {
         margin-bottom: 25px; }

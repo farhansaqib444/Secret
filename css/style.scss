@@ -454,36 +454,12 @@
 
 //Search Page Styling Start
 .search-page {
-	.outer-search {
-		background: #FFFFFF 0% 0% no-repeat padding-box;
-		box-shadow: 0px 10px 30px #00000026;
-		border-radius: 10px;
-		padding: 20px 20px;
-		text-align: center;
-		h1 {
-			margin-bottom: 25px;
-			font-size: 56px;
-			font-weight: 400;
-			font-family: Roboto;
-			letter-spacing: 4.2px;
-			color: #00000080;
-			text-shadow: 0px 10px 30px #00000026;
-		}
-		.search-widget {
-			display: flex;
-			justify-content: center;
-			position: relative;
-			margin-bottom: 50px;
-		}
-	}
+
 
 }
 //Search Page Styling End
 
 @media (max-width: 1440px) {
-	body {
-		background-position-y: -60px;
-	}
 	.container {
 		max-width: 1200px;
 	}
@@ -496,6 +472,9 @@
 @media (max-width: 1030px) {
 	body {
 		background-position-y: 0;
+		&.mini-bg {
+			background-position-y: 0;
+		}
 	}
 	.user-card {
 		margin-bottom: 30px;
@@ -639,6 +618,7 @@
 			}
 		}
 	}
+
 }
 @media (max-width: 375px) {
 }

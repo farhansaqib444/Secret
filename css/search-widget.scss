@@ -28,6 +28,30 @@
 	outline: 0;
 }
 
+.outer-search {
+	background: #FFFFFF 0% 0% no-repeat padding-box;
+	box-shadow: 0px 10px 30px #00000026;
+	border-radius: 10px;
+	padding: 20px 20px;
+	text-align: center;
+	margin-bottom: 73px;
+	h1 {
+		margin-bottom: 25px;
+		font-size: 56px;
+		font-weight: 400;
+		font-family: Roboto;
+		letter-spacing: 4.2px;
+		color: #00000080;
+		text-shadow: 0px 10px 30px #00000026;
+	}
+	.search-widget {
+		display: flex;
+		justify-content: center;
+		position: relative;
+		margin-bottom: 10px;
+	}
+}
+
 .search-bar {
 	::-webkit-input-placeholder { /* Edge */
 		font: Regular 18px/20px Roboto;
@@ -47,6 +71,7 @@
 		color: #000000;
 	}
 	display: inline-flex;
+	flex-wrap: wrap;
 	background: #F9F9FE 0% 0% no-repeat padding-box;
 	box-shadow: 0px 10px 30px #00000026;
 	border-radius: 10px;
@@ -55,16 +80,19 @@
 	input {
 		border: 0;
 		padding: 15px 15px;
-		border-top-left-radius: 10px;
-		border-bottom-left-radius: 10px;
+		border-radius: 10px 0 0 10px;
 		width: 100%;
 		max-width: 320px;
-		font: Regular 18px/20px Roboto;
+		font-size: 18px;
+		font-family: Roboto;
+		font-weight: 400;
 		letter-spacing: 0;
 		color: #000000;
 	}
 	select {
-		font: Regular 18px/20px Roboto;
+		font-size: 18px;
+		font-family: Roboto;
+		font-weight: 400;
 		letter-spacing: 0;
 		color: #000000;
 		border: 0;
@@ -73,9 +101,50 @@
 	button {
 		border-radius: 0px 10px 10px 0px;
 		text-align: center;
-		font: Medium 18px/20px Roboto;
+		font-size: 18px;
+		font-family: Roboto;
+		font-weight: 400;
 		letter-spacing: 0;
 		max-width: 190px;
 		width: 100%;
+	}
+}
+
+@media (max-width: 767px) {
+	.search-page {
+		.outer-search {
+			padding: 20px 20px;
+			text-align: center;
+			margin-bottom: 20px;
+			h1 {
+				margin-bottom: 15px;
+				font-size: 24px;
+			}
+			.search-widget {
+				display: flex;
+				justify-content: center;
+				position: relative;
+			}
+		}
+
+	}
+	.search-bar {
+		input {
+			border-radius: 10px 10px 0 0;
+			font-size: 13px;
+			width: 100%;
+			max-width: 100%;
+		}
+		select {
+			font-size: 13px;
+			padding: 15px;
+			width: 100%;
+		}
+		button {
+			max-width: 100%;
+			width: 100%;
+			border-radius: 0 0 10px 10px;
+			padding: 10px 3px;
+		}
 	}
 }

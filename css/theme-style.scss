@@ -11,6 +11,7 @@ body {
 	&.mini-bg {
 		background: url(../images/bckgrnd-2.png) no-repeat;
 		background-position-y: -250px;
+		background-size: cover;
 	}
 }
 input:focus, select:focus, .btn {
@@ -94,6 +95,13 @@ button:focus {
 		line-height: 30px;
 		letter-spacing: 0;
 		color: #161616;
+	}
+	.tag-line {
+		font-family: Roboto, serif;
+		font-size: 28px;
+		font-weight: 400;
+		letter-spacing: 0;
+		color: #2C99ED;
 	}
 }
 	.section-separator {
@@ -183,7 +191,7 @@ footer {
 }
 @media (max-width: 1440px) {
 	body {
-		background-position-y: -60px;
+		background-position-y: -60px !important;
 	}
 	.container {
 		max-width: 1200px;
@@ -207,7 +215,7 @@ footer {
 	}
 	.banner-area {
 		&.without-slider {
-			min-height: 320px;
+			min-height: 265px;
 			display: flex;
 			align-items: flex-end;
 		}
@@ -236,7 +244,7 @@ footer {
 	}
 	.section-title {
 		h2 {
-			font-size: 36px;
+			font-size:25px;
 		}
 		p {
 			font-size: 18px;
@@ -270,7 +278,7 @@ footer {
 	.banner-area {
 		min-height: 470px;
 		&.without-slider {
-			min-height: 230px;
+			min-height: 180px;
 			display: flex;
 			align-items: flex-end;
 		}
@@ -282,7 +290,7 @@ footer {
 			margin-bottom: 0;
 			.banner-title {
 				margin-bottom: 50px;
-				font-size: 26px;
+				font-size: 36px;
 			}
 			.banner-lead {
 				margin-top: 0;
@@ -318,6 +326,7 @@ footer {
 		&.mini-bg {
 			background: url(../images/mobilebckgrnd.png) no-repeat;
 			background-position-y: 0;
+			background-size: cover;
 		}
 	}
 	.navbar {
@@ -343,7 +352,7 @@ footer {
 			margin-bottom: 0;
 			.banner-title {
 				margin-bottom: 15px;
-				font-size: 25px;
+				font-size: 34px;
 				color: #331A70;
 			}
 			.banner-lead {
