@@ -224,6 +224,32 @@
   .client-card.bg-dark p, .client-card.bg-dark label {
     color: #9B9B9B; }
 
+.category-tags a {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: Roboto;
+  letter-spacing: 0;
+  color: #331A70; }
+  .category-tags a :hover {
+    color: #331A70;
+    cursor: pointer; }
+
+.video-slider iframe {
+  border-radius: 10px; }
+.video-slider .owl-nav {
+  display: flex;
+  position: absolute;
+  right: 0;
+  transform: translate(0%, -50%);
+  top: 50%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.6);
+  padding: 0 20px; }
+  .video-slider .owl-nav .owl-prev {
+    display: none; }
+.video-slider .owl-dots {
+  display: none; }
+
 .consultant-page {
   background: #FFFFFF 0% 0% no-repeat padding-box;
   box-shadow: 0px 10px 30px #00000026;
@@ -240,14 +266,95 @@
     background: #331A70 0% 0% no-repeat padding-box;
     height: 80px; }
   .consultant-page .consult-img img {
-    max-width: 284px;
-    width: 100%; }
+    width: 284px;
+    height: auto;
+    border-radius: 10px; }
   .consultant-page .consult-container {
     padding-right: 15px;
     padding-left: 15px;
     max-width: 980px;
     width: 100%;
     margin: -182px auto 0; }
+    .consultant-page .consult-container .consult-title {
+      font-size: 48px;
+      font-weight: 500;
+      font-family: Roboto;
+      letter-spacing: 0;
+      color: #331A70;
+      margin-top: 40px; }
+      .consultant-page .consult-container .consult-title + label {
+        font-size: 28px;
+        font-weight: 500;
+        font-family: Roboto;
+        letter-spacing: 0;
+        color: #161616; }
+    .consultant-page .consult-container .consult-share {
+      text-align: right;
+      display: block;
+      margin-top: 40px; }
+    .consultant-page .consult-container .consult-body h2 {
+      font-size: 44px;
+      font-weight: 500;
+      font-family: Roboto;
+      letter-spacing: 0;
+      color: #9B9B9B;
+      margin-bottom: 20px; }
+    .consultant-page .consult-container .consult-body p {
+      font-size: 18px;
+      font-weight: 400;
+      font-family: Roboto;
+      margin-bottom: 15px;
+      letter-spacing: 0;
+      color: #9B9B9B; }
+
+.comment-area {
+  background: rgba(51, 26, 112, 0.05) 0% 0% no-repeat padding-box; }
+  .comment-area .comment-container {
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 25px;
+    max-width: 980px;
+    width: 100%;
+    margin: 0 auto; }
+  .comment-area .single-comment .media .media-body h5 {
+    color: #331A70;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: Roboto;
+    letter-spacing: 0; }
+    .comment-area .single-comment .media .media-body h5 span {
+      font-size: 16px;
+      font-weight: 500;
+      font-family: Roboto;
+      letter-spacing: 0;
+      color: #9B9B9B; }
+  .comment-area .single-comment .media .media-body p {
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: Roboto;
+    letter-spacing: 0;
+    color: #161616; }
+
+.search-page .outer-search {
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 10px 30px #00000026;
+  border-radius: 10px;
+  padding: 20px 20px;
+  text-align: center; }
+  .search-page .outer-search h1 {
+    margin-bottom: 25px;
+    font-size: 56px;
+    font-weight: 400;
+    font-family: Roboto;
+    letter-spacing: 4.2px;
+    color: #00000080;
+    text-shadow: 0px 10px 30px #00000026; }
+  .search-page .outer-search .search-widget {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 50px; }
 
 @media (max-width: 1440px) {
   body {
@@ -296,27 +403,75 @@
     width: 100%; }
   .consultant-page .consult-container {
     margin: -110px auto 0; }
+    .consultant-page .consult-container .consult-title {
+      font-size: 35px; }
+      .consultant-page .consult-container .consult-title + label {
+        font-size: 22px; }
+    .consultant-page .consult-container .consult-share img {
+      width: 20px; }
+    .consultant-page .consult-container .consult-body h2 {
+      font-size: 28px;
+      margin-bottom: 15px; }
+    .consultant-page .consult-container .consult-body p {
+      font-size: 16px;
+      margin-bottom: 15px; }
   .consultant-page .rating > span {
-    width: 15px;
-    font-size: 20px; } }
+    width: 20px;
+    font-size: 25px; } }
 @media (max-width: 767px) {
   .online-status p {
     font-size: 18px; }
 
   .consultant-page .consult-banner {
     height: 175px; }
+  .consultant-page .banner-bar {
+    background: #331A70 0% 0% no-repeat padding-box;
+    height: 40px; }
   .consultant-page .consult-img img {
-    max-width: 110px;
+    max-width: 75px;
+    border-radius: 100%;
     width: 100%; }
   .consultant-page .consult-container {
-    margin: -80px auto 0; }
+    margin: -57px auto 0; }
+    .consultant-page .consult-container .consult-title {
+      font-size: 20px;
+      margin-top: 25px; }
+      .consultant-page .consult-container .consult-title + label {
+        font-size: 16px; }
+    .consultant-page .consult-container .consult-share {
+      margin-top: 20px; }
+      .consultant-page .consult-container .consult-share img {
+        width: 15px; }
   .consultant-page .rating > span {
     width: 15px;
     font-size: 20px; }
-  .consultant-page .banner-bar {
-    background: #331A70 0% 0% no-repeat padding-box;
-    height: 50px; }
   .consultant-page button.banner-bar-btn {
-    font-size: 12px; } }
+    font-size: 12px; }
+
+  .comment-area .single-comment .media .media-body h5 {
+    font-size: 16px; }
+    .comment-area .single-comment .media .media-body h5 span {
+      font-size: 14px; }
+  .comment-area .single-comment .media .media-body p {
+    font-size: 13px; }
+  .comment-area .single-comment .rating {
+    margin-bottom: 0; } }
+@media (max-width: 325px) {
+  .category-tags a {
+    font-size: 13px; }
+
+  .consultant-page .consult-container {
+    margin: -50px auto 0; }
+    .consultant-page .consult-container .consult-title {
+      font-size: 18px;
+      margin-bottom: 0; }
+      .consultant-page .consult-container .consult-title + label {
+        font-size: 13px; }
+    .consultant-page .consult-container .consult-body h2 {
+      font-size: 22px;
+      margin-bottom: 15px; }
+    .consultant-page .consult-container .consult-body p {
+      font-size: 14px;
+      margin-bottom: 15px; } }
 
 /*# sourceMappingURL=style.css.map */

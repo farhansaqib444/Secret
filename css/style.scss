@@ -1,3 +1,4 @@
+
 .online-status {
 	display: flex;
 	align-items: center;
@@ -303,6 +304,42 @@
 }
 
 //consultant page Styling start
+.category-tags {
+	a {
+		font-size: 18px;
+		font-weight: 400;
+		font-family: Roboto;
+		letter-spacing: 0;
+		color: #331A70;
+		:hover {
+			color: #331A70;
+			cursor: pointer;
+		}
+	}
+}
+.video-slider {
+	iframe {
+		border-radius: 10px;
+	}
+	.owl-nav {
+		display: flex;
+		position: absolute;
+		right: 0;
+		transform: translate(0%, -50%);
+		top: 50%;
+		height: 100%;
+		background: rgba(255, 255, 255, 0.6);
+		padding: 0 20px;
+		.owl-prev {
+			display: none;
+		}
+		.owl-next {
+		}
+	}
+	.owl-dots {
+		display: none;
+	}
+}
 .consultant-page {
 	background: #FFFFFF 0% 0% no-repeat padding-box;
 	box-shadow: 0px 10px 30px #00000026;
@@ -322,8 +359,9 @@
 	}
 	.consult-img {
 		img {
-			max-width: 284px;
-			width: 100%;
+			width: 284px;
+			height: auto;
+			border-radius: 10px;
 		}
 	}
 	.consult-container {
@@ -332,9 +370,115 @@
 		max-width: 980px;
 		width: 100%;
 		margin: -182px auto 0;
+		.consult-title {
+			font-size: 48px;
+			font-weight: 500;
+			font-family: Roboto;
+			letter-spacing: 0;
+			color: #331A70;
+			margin-top: 40px;
+			+ label {
+				font-size: 28px;
+				font-weight: 500;
+				font-family: Roboto;
+				letter-spacing: 0;
+				color: #161616;
+			}
+		}
+		.consult-share {
+			text-align: right;
+			display: block;
+			margin-top: 40px;
+		}
+		.consult-body {
+			h2 {
+				font-size: 44px;
+				font-weight: 500;
+				font-family: Roboto;
+				letter-spacing: 0;
+				color: #9B9B9B;
+				margin-bottom: 20px;
+			}
+			p {
+				font-size: 18px;
+				font-weight: 400;
+				font-family: Roboto;
+				margin-bottom: 15px;
+				letter-spacing: 0;
+				color: #9B9B9B
+			}
+		}
 	}
 }
+.comment-area {
+	background: rgba(51, 26, 112, 0.05) 0% 0% no-repeat padding-box;
+	.comment-container {
+		padding-right: 15px;
+		padding-left: 15px;
+		padding-top: 25px;
+		max-width: 980px;
+		width: 100%;
+		margin: 0 auto;
+	}
+	.single-comment {
+		.media {
+			.media-body {
+				h5 {
+					color: #331A70;
+					font-size: 18px;
+					font-weight: 500;
+					font-family: Roboto;
+					letter-spacing: 0;
+					span {
+						font-size: 16px;
+						font-weight: 500;
+						font-family: Roboto;
+						letter-spacing: 0;
+						color: #9B9B9B;
+					}
+				}
+				p {
+					margin-bottom: 0;
+					font-size: 14px;
+					font-weight: 400;
+					font-family: Roboto;
+					letter-spacing: 0;
+					color: #161616;
+				}
+			}
+		}
+	}
+
+}
 //consultant page Styling End
+
+//Search Page Styling Start
+.search-page {
+	.outer-search {
+		background: #FFFFFF 0% 0% no-repeat padding-box;
+		box-shadow: 0px 10px 30px #00000026;
+		border-radius: 10px;
+		padding: 20px 20px;
+		text-align: center;
+		h1 {
+			margin-bottom: 25px;
+			font-size: 56px;
+			font-weight: 400;
+			font-family: Roboto;
+			letter-spacing: 4.2px;
+			color: #00000080;
+			text-shadow: 0px 10px 30px #00000026;
+		}
+		.search-widget {
+			display: flex;
+			justify-content: center;
+			position: relative;
+			margin-bottom: 50px;
+		}
+	}
+
+}
+//Search Page Styling End
 
 @media (max-width: 1440px) {
 	body {
@@ -402,14 +546,34 @@
 		}
 		.consult-container {
 			margin: -110px auto 0;
+			.consult-title {
+				font-size: 35px;
+				+ label {
+					font-size: 22px;
+				}
+			}
+			.consult-share {
+				img {
+					width: 20px;
+				}
+			}
+			.consult-body {
+				h2 {
+					font-size: 28px;
+					margin-bottom: 15px;
+				}
+				p {
+					font-size: 16px;
+					margin-bottom: 15px;
+				}
+			}
 		}
 		.rating > span {
-			width: 15px;
-			font-size: 20px;
+			width: 20px;
+			font-size: 25px;
 		}
 
 	}
-
 }
 @media (max-width: 767px) {
 	.online-status p {
@@ -419,31 +583,94 @@
 		.consult-banner {
 			height: 175px;
 		}
+		.banner-bar {
+			background: #331A70 0% 0% no-repeat padding-box;
+			height: 40px;
+		}
 		.consult-img {
 			img {
-				max-width: 110px;
+				max-width: 75px;
+				border-radius: 100%;
 				width: 100%;
 			}
 		}
 		.consult-container {
-			margin: -80px auto 0;
+			margin: -57px auto 0;
+			.consult-title {
+				font-size: 20px;
+				margin-top: 25px;
+				+ label {
+					font-size: 16px;
+				}
+			}
+			.consult-share {
+				margin-top: 20px;
+				img {
+					width: 15px;
+				}
+			}
 		}
 		.rating > span {
 			width: 15px;
 			font-size: 20px;
-		}
-		.banner-bar {
-			background: #331A70 0% 0% no-repeat padding-box;
-			height: 50px;
 		}
 		button.banner-bar-btn {
 			font-size: 12px;
 		}
 
 	}
+	.comment-area {
+		.single-comment {
+			.media {
+				.media-body {
+					h5 {
+						font-size: 16px;
+						span {
+							font-size: 14px;
+						}
+					}
+					p {
+						font-size: 13px;
+					}
+				}
+			}
+			.rating {
+				margin-bottom: 0;
+			}
+		}
+	}
 }
 @media (max-width: 375px) {
 }
 @media (max-width: 325px) {
+	.category-tags a {
+		font-size: 13px;
+	}
+	.consultant-page {
+		.consult-container {
+			margin: -50px auto 0;
 
+			.consult-title {
+				font-size: 18px;
+				margin-bottom: 0;
+				+ label {
+					font-size: 13px;
+				}
+			}
+
+			.consult-body {
+				h2 {
+					font-size: 22px;
+					margin-bottom: 15px;
+				}
+				p {
+					font-size: 14px;
+					margin-bottom: 15px;
+				}
+			}
+
+
+
+		}
+	}
 }

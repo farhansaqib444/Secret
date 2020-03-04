@@ -7,6 +7,29 @@ body {
   background: url(../images/body-bg.png) no-repeat;
   background-size: cover;
   background-position-y: -250px; }
+  body.mini-bg {
+    background: url(../images/bckgrnd-2.png) no-repeat;
+    background-position-y: -250px; }
+
+input:focus, select:focus, .btn {
+  outline-offset: 0;
+  outline: none;
+  box-shadow: none !important;
+  border: none; }
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* Some browsers will not display the caret when using calc, so we put the fallback first */
+  background: url("http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png") white no-repeat 98.5% !important;
+  /* !important used for overriding all other customisations */
+  background: url("http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png") white no-repeat calc(100% - 10px) !important;
+  /* Better placement regardless of input width */ }
+
+/*For IE*/
+select::-ms-expand {
+  display: none; }
 
 a:hover {
   text-decoration: none; }
@@ -71,6 +94,11 @@ button:focus {
 
 .section-separator {
   margin-bottom: 50px; }
+  .section-separator.mini-border {
+    max-width: 461px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 25px auto; }
 
 .banner-area {
   min-height: 605px; }
@@ -223,11 +251,17 @@ footer {
   .text-white-768 {
     color: #fff !important; } }
 @media (max-width: 767px) {
+  .w-100-767 {
+    width: 100%; }
+
   body {
     position: relative;
     background: url(../images/mobilebckgrnd.png) no-repeat;
     background-size: cover;
     background-position-y: 0; }
+    body.mini-bg {
+      background: url(../images/mobilebckgrnd.png) no-repeat;
+      background-position-y: 0; }
 
   .navbar {
     padding: 15px 15px;
